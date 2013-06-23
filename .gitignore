@@ -20,3 +20,6 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+
+# No device tree binary overlays; compile those yourself
+*.dtbo

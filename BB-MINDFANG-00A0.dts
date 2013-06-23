@@ -31,11 +31,11 @@
 
             gpio_keys {
                 compatible = "gpio-keys";
-                autorepeat;
                 pinctrl-names = "default";
                 pinctrl-0 = <&multi_pins>;
                 #address-cells = <1>;
                 #size-cells = <0>;
+                autorepeat;
 
                 switch_multi_up {
                     label = "Multi-up";
@@ -43,6 +43,7 @@
                     linux,code = <1>;
                     gpios = <&gpio2 18 0x4>;
                     gpio-key,wakeup;
+                    autorepeat;
                 };
                 switch_multi_down {
                     label = "Multi-down";
@@ -50,6 +51,7 @@
                     linux,code = <2>;
                     gpios = <&gpio2 16 0x4>;
                     gpio-key,wakeup;
+                    autorepeat;
                 };
                 switch_multi_right {
                     label = "Multi-right";
@@ -57,6 +59,7 @@
                     linux,code = <3>;
                     gpios = <&gpio2 19 0x4>;
                     gpio-key,wakeup;
+                    autorepeat;
                 };
                 switch_multi_left {
                     label = "Multi-left";
@@ -64,6 +67,7 @@
                     linux,code = <4>;
                     gpios = <&gpio2 17 0x4>;
                     gpio-key,wakeup;
+                    autorepeat;
                 };
                 switch_multi_select {
                     label = "Multi-select";
@@ -71,6 +75,7 @@
                     linux,code = <5>;
                     gpios = <&gpio4 21 0x4>;
                     gpio-key,wakeup;
+                    autorepeat;
                 };
             };
         };
